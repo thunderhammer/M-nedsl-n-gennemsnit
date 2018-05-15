@@ -34,6 +34,13 @@ namespace Månedsløn_gennemsnit
  
             gns = (gns / i);
             Console.WriteLine("Gennemsnit: " + gns.ToString("N2"));
+
+            //string tmp = "";
+            System.Text.StringBuilder sb = new StringBuilder(); // A Performance wise good way of manipulating strings. Never, ever use a for loop unless it's trivial. 
+            for (int ii = 0; ii < 1000000; ii++)
+            {
+                sb.Append("*");
+            }
             
         }
     }
